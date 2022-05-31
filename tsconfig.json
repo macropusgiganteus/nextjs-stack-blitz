@@ -1,7 +1,11 @@
 {
   "compilerOptions": {
     "target": "es5",
-    "lib": ["dom", "dom.iterable", "esnext"],
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "esnext"
+    ],
     "allowJs": true,
     "skipLibCheck": true,
     "strict": false,
@@ -11,7 +15,8 @@
     "esModuleInterop": true,
     "module": "esnext",
     "isolatedModules": true,
-    "jsx": "preserve"
+    "jsx": "preserve",
+    "resolveJsonModule": true
   },
   "include": [
     "next-env.d.ts",
@@ -22,5 +27,7 @@
     "pages/api/post-middleware/_middleware.js",
     "pages/api/auth/[...nextauth].js"
   ],
-  "exclude": ["node_modules"]
+  "exclude": [
+    "node_modules"
+  ]
 }
